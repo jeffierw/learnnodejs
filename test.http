@@ -1,0 +1,27 @@
+@url = http://localhost:3000/
+###  // 每一个###都可以发送一次请求
+GET {{url}}products
+
+###
+GET {{url}}products/5eb00a08413ed12bdceb49c1
+
+###
+POST {{url}}products
+Content-Type: application/json
+
+
+{
+    "title": "产品5"
+}
+
+###
+PUT {{url}}products/5eb01678ea5ae6180c674c69
+Content-Type: application/json
+
+
+{
+    "title": "产品5"
+}
+
+###
+DELETE {{url}}products/5eb01678ea5ae6180c674c69
